@@ -11,6 +11,35 @@ namespace darkstorm_api.Services
             _context = context;
         }
 
+        public async Task<Product> AddProducts(Product product)
+        {
+            var newProduct = new Product
+            {
+                ProductId = Guid.NewGuid(),
+                Model = product.Model,
+                Manufacturer = product.Manufacturer,
+                Year = product.Year,
+                Display = product.Display,
+                HardDisk = product.HardDisk,
+                RAM = product.RAM,
+                CPU = product.CPU,
+                Price = product.Price,
+                NumberOfPorts = product.NumberOfPorts,
+                FalseTone = product.FalseTone,
+                Quality = product.Quality,
+                Resolution = product.Resolution,
+                RefreshRate = product.RefreshRate,
+                GPU = product.GPU,
+                HardDiskName = product.HardDiskName,
+                RamName = product.RamName,
+                TrueTone = product.TrueTone,
+            };
+            await _context.AddAsync(newProduct);
+            await _context.SaveChangesAsync();
+
+            return newProduct;
+        }
+
         async Task<bool> IProductServices.DeleteProductById(Guid id)
         {
             var product = await _context.Products.Where(p => p.ProductId == id).FirstOrDefaultAsync();

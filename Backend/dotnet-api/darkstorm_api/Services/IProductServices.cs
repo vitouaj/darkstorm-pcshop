@@ -7,6 +7,7 @@ namespace darkstorm_api.Services
         Task<IEnumerable<Product>> GetProducts();
         Task<Product> GetProductById(Guid id);
 
+        Task<Product> AddProducts(Product product);
         Task<bool> UpdateProductById(Product product);
 
         Task<bool> DeleteProductById(Guid id);

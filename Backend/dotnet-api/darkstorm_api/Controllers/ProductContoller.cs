@@ -40,7 +40,16 @@ namespace darkstorm_api.Controllers
             return Ok(product);
         }
 
-        
-
+        [HttpPost]
+        [Route("/addProduct")]
+        public async Task<IActionResult> AddProduct([FromBody] Product product)
+        {
+            if (product == null)
+            {
+                return BadRequest();
+            }
+            var newpd = await _service.AddProducts(product);
+            return Ok(newpd);
+        }
     }
 }
