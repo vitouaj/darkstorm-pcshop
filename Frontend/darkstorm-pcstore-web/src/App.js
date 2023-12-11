@@ -1,7 +1,9 @@
 import "./App.css";
+import landing from "./pages/Landing";
 
+// eslint-disable-next-line no-unused-vars
 function App() {
-  return <div className="text-3xl font-bold underline">Hello World</div>;
+  return <landing />;
 }
 
 export default App;
