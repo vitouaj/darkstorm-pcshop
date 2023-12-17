@@ -60,7 +60,7 @@ const navigations = [
 
 const MobileNavigation = () => {
   return (
-    <div className="w-full h-full flex justify-between bg-white mx-3 md:hidden">
+    <div className="w-full h-full flex justify-between bg-white mx-3 sm:hidden">
       {navigations.map((n, i) => {
         return (
           <div

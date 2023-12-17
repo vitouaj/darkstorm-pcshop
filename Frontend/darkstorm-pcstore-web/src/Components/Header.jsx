@@ -22,11 +22,11 @@ export const Header = () => {
           </svg>
           <input
             type="text"
-            className="hidden md:block w-56 h-full text-[13px] pl-2 border-sm border-2 rounded-lg"
+            className="hidden sm:block w-56 h-full text-[13px] pl-2 border-sm border-2 rounded-lg"
             placeholder="Search..."
           ></input>
         </div>
-        <ul className="hidden ml-4 md:flex justify-between gap-x-2 items-center text-[13px]">
+        <ul className="hidden ml-4 sm:flex justify-between gap-x-2 items-center text-[13px]">
           <li>Home</li>
           <li>Cart</li>
           <li>Promotion</li>
