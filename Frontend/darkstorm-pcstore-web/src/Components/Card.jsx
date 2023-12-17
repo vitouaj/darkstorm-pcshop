@@ -1,6 +1,16 @@
-const Card = ({ productName, price, viewCount, imageUrl }) => {
+const Card = ({
+  productId,
+  productName,
+  price,
+  viewCount,
+  imageUrl,
+  onClickHandler,
+}) => {
   return (
-    <div className="w-[10rem] md:w-[11rem] xl:w-[15rem] flex flex-col justify-between h-auto rounded-t-md shadow-lg cursor-pointer mx-auto hover:shadow-xl">
+    <div
+      onClick={() => onClickHandler(productId)}
+      className="w-[10rem] md:w-[11rem] xl:w-[15rem] flex flex-col justify-between h-auto rounded-t-md shadow-lg cursor-pointer mx-auto hover:shadow-xl"
+    >
       <img
         className="w-full object-cover rounded-t-md"
         alt="pc"

@@ -5,10 +5,10 @@ export const Header = () => {
         id="header"
         className="w-full md:w-4/5 lg:w-3/4 h-16 flex justify-between items-center  bg-white border-b-2"
       >
-        <div id="shopName" className="ml-2">
+        <a href="/" id="shopName" className="ml-2 md:text-md lg:text-lg">
           Dark
           <i className="text-blue-500 font-bold">Storm</i>
-        </div>
+        </a>
 
         <div className="flex h-12 items-center justify-between gap-2">
           <div className="relative h-8">
@@ -23,7 +23,7 @@ export const Header = () => {
             </svg>
             <input
               type="text"
-              className="hidden sm:block w-56 h-full text-[13px] pl-2 border-sm border-2 rounded-lg"
+              className="hidden sm:block w-56 h-full text-[13px] pl-2 border-sm border-2 rounded-md"
               placeholder="Search..."
             ></input>
           </div>
