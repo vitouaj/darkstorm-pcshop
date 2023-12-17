@@ -3,7 +3,7 @@ const Card = ({ productId, productName, price, viewCount, imageUrl }) => {
     <a
       href={`/detail?productId=${productId}`}
       // onClick={() => onClickHandler(productId)}
-      className="w-[10rem] md:w-[11rem] xl:w-[15rem] flex flex-col justify-between h-auto rounded-t-md shadow-lg cursor-pointer mx-auto hover:shadow-xl"
+      className="w-[10rem] min-w-[7rem] md:w-[11rem] xl:w-[15rem] flex flex-col justify-between h-auto rounded-t-md shadow-lg cursor-pointer mx-auto hover:shadow-xl"
     >
       <img
         className="w-full object-cover rounded-t-md"

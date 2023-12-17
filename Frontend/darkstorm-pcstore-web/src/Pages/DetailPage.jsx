@@ -33,9 +33,9 @@ export const DetailPage = () => {
             <th className="flex justify-end items-center h-full w-full">
               <button
                 onClick={() => console.log(computer)}
-                className="w-8/12 h-10 relative flex justify-center gap-x-2 items-center bg-green-500 border-green-500 border-2 rounded-sm text-sm"
+                className="w-8/12 h-8 relative flex justify-center gap-x-2 items-center bg-green-500 border-green-500 border-2 rounded-sm text-sm"
               >
-                <span className="text-white font-light">Add to cart</span>
+                <span className="text-white text-[12px] font-light">Add</span>
                 <svg
                   className=""
                   fill="white"
@@ -68,18 +68,20 @@ export const DetailPage = () => {
       <span className="text-[15px] mx-3 font-bold col-span-2 sm:col-span-3 lg:col-span-4">
         Related Products
       </span>
-      {pc.map((c, i) => {
-        return (
-          <Card
-            key={i}
-            productId={c.productId}
-            productName={c.productName}
-            imageUrl={c.imageUrl}
-            price={c.price}
-            viewCount={c.viewCount}
-          />
-        );
-      })}
+      <div className="col-span-2 sm:col-span-3 lg:col-span-4 flex gap-x-1 overflow-x-scroll w-auto">
+        {pc.map((c, i) => {
+          return (
+            <Card
+              key={i}
+              productId={c.productId}
+              productName={c.productName}
+              imageUrl={c.imageUrl}
+              price={c.price}
+              viewCount={c.viewCount}
+            />
+          );
+        })}
+      </div>
     </Layout>
   );
 };
