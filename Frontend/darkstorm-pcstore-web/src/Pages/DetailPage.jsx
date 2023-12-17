@@ -3,10 +3,8 @@ import { Layout } from "./Layout";
 import { PCs as pc } from "../Data/Computer";
 import { Card } from "../Components/Card";
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
 
 export const DetailPage = () => {
-  const navigator = useNavigate();
   let firstComputer = {
     productId: "",
     productName: "",
@@ -24,12 +22,6 @@ export const DetailPage = () => {
     var newDisplayData = pc.find((p) => p.productId === queryId);
     setDisplayData({ ...newDisplayData });
   }, []);
-
-  function viewDetailFromDetail(cardId) {
-    navigator(`/detail?productId=${cardId}`);
-    var newDisplayData = pc.find((p) => p.productId === cardId);
-    setDisplayData({ ...newDisplayData });
-  }
 
   return (
     <Layout>
@@ -85,7 +77,6 @@ export const DetailPage = () => {
             imageUrl={c.imageUrl}
             price={c.price}
             viewCount={c.viewCount}
-            onClickHandler={viewDetailFromDetail}
           />
         );
       })}

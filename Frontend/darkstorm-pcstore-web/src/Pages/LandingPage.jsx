@@ -2,15 +2,9 @@ import { Card } from "../Components/Card";
 import { PCs as pc } from "../Data/Computer";
 import { Carousel } from "../Components/Carousel";
 import { Layout } from "./Layout";
-import { useNavigate } from "react-router-dom";
 
 export const LandingPage = () => {
-  const navigator = useNavigate();
-
   // handler for card view detail from landing page
-  const viewProductDetail = (productId) => {
-    navigator(`/detail?productId=${productId}`);
-  };
 
   // pchum ben carousel
   const img =
@@ -34,7 +28,6 @@ export const LandingPage = () => {
             imageUrl={c.imageUrl}
             price={c.price}
             viewCount={c.viewCount}
-            onClickHandler={viewProductDetail}
           />
         );
       })}

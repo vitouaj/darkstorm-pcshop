@@ -3,6 +3,7 @@ import InnerHTML from "dangerously-set-html-content";
 const navigations = [
   {
     label: "Home",
+    link: "/",
     svg: `<svg
             viewBox="0 0 1024 1024"
             fill="currentColor"
@@ -16,6 +17,7 @@ const navigations = [
   },
   {
     label: "Search",
+    link: "/",
     svg: `<svg
     viewBox="0 0 1024 1024"
     fill="currentColor"
@@ -28,6 +30,7 @@ const navigations = [
   },
   {
     label: "Cart",
+    link: "/cart",
     svg: `<svg
     fill="currentColor"
     viewBox="0 0 16 16"
@@ -40,6 +43,7 @@ const navigations = [
   },
   {
     label: "Profile",
+    link: "/profile",
     svg: ` <svg fill="none" viewBox="0 0 24 24" height="1.3rem" width="1.3rem" {...props}>
     <path
       fill="currentColor"
@@ -63,7 +67,8 @@ const MobileNavigation = () => {
     <div className="w-full h-full flex justify-between bg-white mx-3 sm:hidden">
       {navigations.map((n, i) => {
         return (
-          <div
+          <a
+            href={n.link}
             key={i}
             id="btn"
             className="relative flex flex-col justify-center items-center"
@@ -75,7 +80,7 @@ const MobileNavigation = () => {
             )}
             <InnerHTML html={n.svg} />
             <span className="text-[10px]">{n.label}</span>
-          </div>
+          </a>
         );
       })}
     </div>

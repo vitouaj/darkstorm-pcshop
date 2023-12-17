@@ -1,14 +1,8 @@
-const Card = ({
-  productId,
-  productName,
-  price,
-  viewCount,
-  imageUrl,
-  onClickHandler,
-}) => {
+const Card = ({ productId, productName, price, viewCount, imageUrl }) => {
   return (
-    <div
-      onClick={() => onClickHandler(productId)}
+    <a
+      href={`/detail?productId=${productId}`}
+      // onClick={() => onClickHandler(productId)}
       className="w-[10rem] md:w-[11rem] xl:w-[15rem] flex flex-col justify-between h-auto rounded-t-md shadow-lg cursor-pointer mx-auto hover:shadow-xl"
     >
       <img
@@ -39,7 +33,7 @@ const Card = ({
           </div>
         </div>
       </div>
-    </div>
+    </a>
   );
 };
 
