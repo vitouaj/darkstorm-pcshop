@@ -3,7 +3,7 @@ export const Header = () => {
     <div className="fixed w-full h-16 bg-white flex justify-center">
       <div
         id="header"
-        className="w-full md:w-4/5 lg:w-3/4 h-16 flex justify-between items-center  bg-white border-b-2"
+        className="w-full md:w-4/5 lg:w-3/4 h-16 flex justify-between items-center bg-white border-b-2"
       >
         <a href="/" id="shopName" className="ml-2 md:text-md lg:text-lg">
           Dark
@@ -28,8 +28,13 @@ export const Header = () => {
             ></input>
           </div>
           <ul className="hidden ml-4 sm:flex justify-between gap-x-2 items-center text-[13px]">
-            <li>Home</li>
-            <li>Cart</li>
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              {" "}
+              <a href="/cart-checkout">Cart</a>
+            </li>
             <li>Promotion</li>
             <li></li>
           </ul>

@@ -30,7 +30,7 @@ const navigations = [
   },
   {
     label: "Cart",
-    link: "/cart",
+    link: "/cart-checkout",
     svg: `<svg
     fill="currentColor"
     viewBox="0 0 16 16"

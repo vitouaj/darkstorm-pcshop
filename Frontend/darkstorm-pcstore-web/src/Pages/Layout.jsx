@@ -15,7 +15,7 @@ export const Layout = ({ children }) => {
       >
         <MobileNavigation />
       </div>
-      <div className="w-full sm:w-3/4 h-72 bg-white flex justify-center mb-20">
+      <div className="w-full sm:w-3/4 h-72 bg-white flex justify-center mb-10">
         <div className="flex flex-col justify-between mx-3 w-full gap-y-3 mt-4">
           <div className="flex flex-col gap-y-3">
             <span className="text-[15px] font-bold">Follow us</span>
@@ -47,7 +47,7 @@ export const Layout = ({ children }) => {
             <span className="text-[15px] font-bold">Location</span>
             <span className="text-[12px]">{address}</span>
           </div>
-          <div className="flex-col flex gap-2">
+          <div className="flex-col flex gap-2 mb-6 sm:mb-0">
             <span className="text-[12px] text-center">
               {new Date().getFullYear()} All right reserved
             </span>
