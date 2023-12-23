@@ -1,11 +1,13 @@
-export const Carousel = ({ image }) => {
+import { Carousel as FlowbiteCarousel } from "flowbite-react";
+
+export const Carousel = ({ images }) => {
   return (
-    <div className="w-full h-52 sm:h-64 md:h-72 lg:h-80 col-span-2 sm:col-span-3 lg:col-span-4">
-      <img
-        className="object-cover w-full h-full rounded-lg shadow-lg"
-        alt="promotions"
-        src={image}
-      />
+    <div className="w-full h-52 sm:h-64 md:h-72 lg:h-80">
+      <FlowbiteCarousel>
+        {images.map((p, i) => {
+          return <img key={i} src={p} alt="..." />;
+        })}
+      </FlowbiteCarousel>
     </div>
   );
 };

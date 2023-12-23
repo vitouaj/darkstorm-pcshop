@@ -23,7 +23,7 @@ export const Header = () => {
             </svg>
             <input
               type="text"
-              className="hidden sm:block w-56 h-full text-[13px] pl-2 border-sm border-2 rounded-md"
+              className="hidden sm:block w-56 h-full text-[13px] pl-2 border-xs rounded-md"
               placeholder="Search..."
             ></input>
           </div>
@@ -32,7 +32,6 @@ export const Header = () => {
               <a href="/">Home</a>
             </li>
             <li>
-              {" "}
               <a href="/cart-checkout">Cart</a>
             </li>
             <li>Promotion</li>

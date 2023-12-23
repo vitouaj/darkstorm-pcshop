@@ -25,8 +25,8 @@ export const DetailPage = () => {
 
   return (
     <Layout>
-      <Carousel image={computer.imageUrl} />
-      <table className="table-auto rounded-lg mx-3 col-span-2 sm:col-span-3 lg:col-span-4">
+      <Carousel images={[computer.imageUrl]} />
+      <table className="table-auto rounded-lg mx-3">
         <thead className="text-[15px]">
           <tr className="h-10 text-left">
             <th>Specification</th>
@@ -66,10 +66,8 @@ export const DetailPage = () => {
           </tr>
         </tbody>
       </table>
-      <span className="text-[15px] mx-3 font-bold col-span-2 sm:col-span-3 lg:col-span-4">
-        Related Products
-      </span>
-      <div className="col-span-2 sm:col-span-3 lg:col-span-4 flex gap-x-1 overflow-x-scroll w-auto">
+      <span className="text-[15px] mx-3 font-bold">Related Products</span>
+      <div className="flex gap-x-1 overflow-x-scroll w-auto">
         {pc.map((c, i) => {
           return (
             <Card
