@@ -1,21 +1,22 @@
+import React from "react";
+
 export const Header = () => {
   return (
-    <div className="fixed w-full h-16 bg-white flex justify-center">
-      <div
-        id="header"
-        className="w-full md:w-4/5 lg:w-3/4 h-16 flex justify-between items-center bg-white border-b-2"
-      >
-        <a href="/" id="shopName" className="ml-2 md:text-md lg:text-lg">
+    <div className="fixed w-full h-16 bg-black shadow-md">
+      <div className="w-full md:w-4/5 lg:w-3/4 h-16 flex justify-between items-center mx-auto">
+        <a
+          href="/"
+          className="text-white text-lg md:text-xl lg:text-2xl font-bold"
+        >
           Dark
-          <i className="text-blue-500 font-bold">Storm</i>
+          <span className="text-blue-500">Storm</span>
         </a>
 
-        <div className="flex h-12 items-center justify-between gap-2">
-          <div className="relative h-8">
+        <div className="flex items-center gap-4">
+          <div className="relative">
             <svg
-              className="hidden md:block top-1.5 absolute right-1"
-              viewBox="0 0 1024 1024"
-              fill="gray"
+              className="hidden md:block absolute top-1.5 right-1 fill-current text-gray-500"
+              viewBox="0 0 24 24"
               height="1.3rem"
               width="1.3rem"
             >
@@ -23,38 +24,62 @@ export const Header = () => {
             </svg>
             <input
               type="text"
-              className="hidden sm:block w-56 h-full text-[13px] pl-2 border-xs rounded-md"
+              className="hidden md:block w-56 h-full text-sm pl-2 border border-gray-300 rounded-md bg-white focus:outline-none focus:border-blue-500"
               placeholder="Search..."
-            ></input>
+            />
           </div>
-          <ul className="hidden ml-4 sm:flex justify-between gap-x-2 items-center text-[13px]">
+
+          <ul className="hidden md:flex space-x-4 text-sm">
             <li>
-              <a href="/">Home</a>
+              <a href="/" className="text-white hover:text-blue-500">
+                Home
+              </a>
             </li>
             <li>
-              <a href="/cart-checkout">Cart</a>
+              <a
+                href="/cart-checkout"
+                className="text-white hover:text-blue-500"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  height="1.3rem"
+                  width="1.3rem"
+                  className="text-white"
+                >
+                  <path d="M2 5h2l3.35 10.69a2 2 0 0 0 1.9 1.31H18a2 2 0 0 0 2-2 1 1 0 0 0-1-1H7.56L6.75 12l-.12-.38L4 6H2zm13 15a4 4 0 0 1-4-4h8a4 4 0 0 1-4 4z" />
+                </svg>
+              </a>
             </li>
-            <li>Promotion</li>
-            <li></li>
+            <li className="text-white hover:text-blue-500">Promotion</li>
           </ul>
-          <div
-            id="notification"
-            className="relative w-8 h-12 flex justify-end items-center mr-2"
-          >
-            <div className="w-4 h-4 bg-red-400 rounded-full text-[10px] text-center absolute top-1.5 text-red">
-              {21}
+
+          <div className="relative">
+            <div className="w-4 h-4 bg-red-400 rounded-full text-xs text-center absolute top-1.5 text-red-50">
+              {1}
             </div>
             <svg
               viewBox="0 0 24 24"
               fill="currentColor"
               height="1.3rem"
               width="1.3rem"
+              className="text-white cursor-pointer"
             >
               <path d="M15 19a3 3 0 01-6 0H4a1 1 0 010-2h1v-6a7 7 0 014.02-6.34 3 3 0 015.96 0A7 7 0 0119 11v6h1a1 1 0 010 2h-5zm-4 0a1 1 0 002 0h-2zm0-12.9A5 5 0 007 11v6h10v-6a5 5 0 00-4-4.9V5a1 1 0 00-2 0v1.1z" />
             </svg>
           </div>
+
+          {/* Log in link */}
+          <a
+            href="/signin"
+            className="text-white bg-blue-500 hover:bg-blue-600 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 focus:outline-none"
+          >
+            Sign In
+          </a>
         </div>
       </div>
     </div>
   );
 };
+
+export default Header;

@@ -4,6 +4,10 @@ import { LandingPage } from "./Pages/LandingPage";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { NoFOundPage } from "./Pages/NoFoundPage";
 import { CheckoutPage } from "./Pages/CheckoutPage";
+import Login from "./Pages/SignIn";
+import SignIn from "./Pages/SignIn";
+import SignUp from "./Pages/SignUp";
+import FogetPassUser from "./Pages/FogetPassUser";
 
 function App() {
   return (
@@ -13,6 +17,10 @@ function App() {
           <Route index element={<LandingPage />} />
           <Route path="detail" element={<DetailPage />} />
           <Route path="cart-checkout" element={<CheckoutPage />} />
+          <Route path="signin" element={<SignIn />} />
+          <Route path="signup" element={<SignUp />} />
+          <Route path="forgetpass" element={<FogetPassUser />} />
+
           <Route path="*" element={<NoFOundPage />} />
         </Route>
       </Routes>
