@@ -83,23 +83,18 @@ const SignIn = () => {
                 required
               />
             </div>
-            <div className="flex items-center justify-between mb-4">
-              <div className="flex items-start">
+            <div className="mb-4">
+              <label className="flex items-center">
                 <input
-                  id="remember"
                   type="checkbox"
+                  className="form-checkbox"
                   checked={rememberMe}
                   onChange={handleRememberMeChange}
-                  className="checkbox-field"
-                  required
                 />
-                <label
-                  htmlFor="remember"
-                  className="text-gray-500 dark:text-gray-300 ml-2"
-                >
-                  Remember me
-                </label>
-              </div>
+                <span className="ml-2 text-sm">Remember me</span>
+              </label>
+            </div>
+            <div className="mb-4">
               <Link
                 to="/forgetpass"
                 className="text-sm font-medium text-primary-600 hover:underline dark:text-primary-500"
@@ -113,17 +108,16 @@ const SignIn = () => {
             >
               Sign in
             </button>
-
-            <p className="text-sm font-light text-gray-500 dark:text-gray-400">
-              Don’t have an account yet?{" "}
-              <Link
-                to="/signup"
-                className="font-medium text-primary-600 hover:underline dark:text-primary-500"
-              >
-                Sign up
-              </Link>
-            </p>
           </form>
+          <p className="text-sm font-light text-gray-500 dark:text-gray-400">
+            Don’t have an account yet?{" "}
+            <Link
+              to="/signup"
+              className="font-medium text-primary-600 hover:underline dark:text-primary-500"
+            >
+              Sign up
+            </Link>
+          </p>
         </div>
       </div>
     </section>
