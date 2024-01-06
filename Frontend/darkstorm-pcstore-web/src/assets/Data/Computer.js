@@ -19,7 +19,7 @@ export const PCs = [
 [      "https://www.ubuy.com.kh/productimg/?image=aHR0cHM6Ly9pbWFnZXMtY2RuLnVidXkuY28uaWQvNjRjMTg3ZmMxOGFjZDM3OWFlNzA0MjZlLWFzdXMtcm9nLXN0cml4LTE1LTYtcjktcnR4LTMwNjAtZ2FtaW5nLmpwZw.jpg",
 ]  },
   {
-    productId: 1,
+    productId: "1",
     productName: "ROG GZ301VU",
     price: 2099.0,
     viewCount: 256,
@@ -37,7 +37,7 @@ export const PCs = [
     imageUrl: ["/laptopimg/rog5.jpg"],
   },
   {
-    productId: 2,
+    productId: "2",
     productName: "AORUS-5-SE4",
     price: 1529.0,
     viewCount: 256,
@@ -55,7 +55,7 @@ export const PCs = [
     imageUrl: ["/laptopimg/aorus.jpg"],
   },
   {
-    productId: 3,
+    productId: "3",
     productName: "Alienware-m15-R7",
     price: 1499.99,
     viewCount: 256,
@@ -70,10 +70,10 @@ export const PCs = [
       port: "Thunderbolt 4",
       weight: "2.5kg",
     },
-    imageUrl: ["/laptopimg/alien.jpg"],
+    imageUrl: ["../assets/Data/laptopimg/alien.jpg"],
   },
   {
-    productId: 4,
+    productId: '4',
     productName: "Acer Nitro 5",
     price: 799.99,
     viewCount: 256,
@@ -91,7 +91,7 @@ export const PCs = [
     imageUrl: ["/laptopimg/nitro5.jpg"],
   },
   {
-    productId: 5,
+    productId: "5",
     productName: "HP EliteBook 850 G7 Notebook",
     price: 1199.99,
     viewCount: 256,
@@ -109,7 +109,7 @@ export const PCs = [
     imageUrl: ["/laptopimg/hpelitebook.jpg"],
   },
   {
-    productId: 6,
+    productId: "6",
     productName: "Lenovo Ideapad 3",
     price: 599.99,
     viewCount: 256,
@@ -127,7 +127,7 @@ export const PCs = [
     imageUrl: ["/laptopimg/ideapad3.jpg"],
   },
   {
-    productId: 7,
+    productId: "7",
     productName: "ASUS TUF (2019) Gaming Laptop, 15.6",
     price: 1499.99,
     viewCount: 256,
@@ -145,7 +145,7 @@ export const PCs = [
     imageUrl: ["/laptopimg/asustuf.jpg"],
   },
   {
-    productId: 8,
+    productId: "8",
     productName: "SAMSUNG Galaxy Book Pro 15.6''FHD AMOLED",
     price: 1299.99,
     viewCount: 256,
@@ -163,7 +163,7 @@ export const PCs = [
     imageUrl: ["/laptopimg/samsungbook.jpg"],
   },
   {
-    productId: 9,
+    productId: "9",
     productName: "Dell Alienware m17",
     price: 2999.99,
     viewCount: 256,
@@ -181,7 +181,7 @@ export const PCs = [
     imageUrl: ["/laptopimg/della1.jpg"],
   },
   {
-    productId: 10,
+    productId: "10",
     productName: "Lenovo Chromebook Duet, 2-in-1",
     price: 249.99,
     viewCount: 256,
@@ -203,7 +203,7 @@ export const PCs = [
     ],
   },
   {
-    productId: 11,
+    productId: "11",
     productName: "Lenovo 82JU00N5US, Legion 5 - Gaming Laptop",
     price: 1299.99,
     viewCount: 256,
@@ -221,7 +221,7 @@ export const PCs = [
     imageUrl: ["/laptopimg/legion.jpg"],
   },
   {
-    productId: 12,
+    productId: "12",
     productName: "Lenovo IdeaPad 1 15.6 FHD Laptop",
     price: 449.99,
     viewCount: 256,
@@ -239,7 +239,7 @@ export const PCs = [
     imageUrl: ["/laptopimg/ideapad.jpg"],
   },
   {
-    productId: 13,
+    productId: '13',
     productName: "ASUS ROG Strix G17 (2024) Gaming Laptop, 17.3” 300Hz OLED",
     price: 2999.99,
     viewCount: 256,
@@ -257,7 +257,7 @@ export const PCs = [
     imageUrl: ["/laptopimg/rog.jpg"],
   },
   {
-    productId: 14,
+    productId: "14",
     productName: "ASUS Vivobook 15.6'' FHD Slim Laptop",
     price: 899.99,
     viewCount: 256,
@@ -275,7 +275,7 @@ export const PCs = [
     imageUrl: ["/laptopimg/vivobook.jpg"],
   },
   {
-    productId: 15,
+    productId: "15",
     productName: "ASUS Vivobook Pro 15 Laptop, 15.6” FHD Display",
     price: 799.99,
     viewCount: 256,
@@ -293,7 +293,7 @@ export const PCs = [
     imageUrl: ["/laptopimg/vivobookpro.jpg"],
   },
   {
-    productId: 16,
+    productId: "16",
     productName: "MacBook Pro M2 PRO",
     price: 1999.99,
     viewCount: 256,
@@ -311,7 +311,7 @@ export const PCs = [
     imageUrl: ["/laptopimg/m21.jpg"],
   },
   {
-    productId: 17,
+    productId: "17",
     productName: "Dell XPS 15",
     price: 1799.99,
     viewCount: 256,
@@ -329,7 +329,7 @@ export const PCs = [
     imageUrl: ["/laptopimg/xps15.jpg"],
   },
   {
-    productId: 18,
+    productId: "18",
     productName: "Razer Blade 15",
     price: 1599.99,
     viewCount: 256,
@@ -347,7 +347,7 @@ export const PCs = [
     imageUrl: ["/laptopimg/blade15.jpg"],
   },
   {
-    productId: 19,
+    productId: "19",
     productName: "HP Spectre x360",
     price: 1449.99,
     viewCount: 256,
@@ -365,7 +365,7 @@ export const PCs = [
     imageUrl: ["/laptopimg/spectre.jpg"],
   },
   {
-    productId: 20,
+    productId: "20",
     productName: "Lenovo ThinkPad X1 Carbon",
     price: 1529.99,
     viewCount: 256,

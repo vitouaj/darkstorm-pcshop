@@ -81,11 +81,11 @@ export const DetailPage = () => {
               </tr>
               <tr className="h-10 border-b-2">
                 <td>CPU</td>
-                <td>{computer.spec.CPU}</td>
+                <td>{computer.spec.cpu}</td>
               </tr>
               <tr className="h-10 border-b-2">
                 <td>GPU</td>
-                <td>{computer.spec.GPU}</td>
+                <td>{computer.spec.gpu}</td>
               </tr>
               <tr className="h-10 border-b-2">
                 <td>Memory</td>
