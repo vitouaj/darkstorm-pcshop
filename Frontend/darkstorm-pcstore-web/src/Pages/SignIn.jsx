@@ -1,10 +1,16 @@
+
+
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
+import { signInWithEmailAndPassword } from "firebase/auth";
+import { auth } from "../firebase-config";
 
 const SignIn = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [rememberMe, setRememberMe] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const navigate = useNavigate();
 
@@ -12,16 +18,27 @@ const SignIn = () => {
   const handlePasswordChange = (e) => setPassword(e.target.value);
   const handleRememberMeChange = () => setRememberMe(!rememberMe);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
 
-    // Add your authentication logic here
-    console.log("Email:", email);
-    console.log("Password:", password);
-    console.log("Remember Me:", rememberMe);
+    try {
+      const userCredential = await signInWithEmailAndPassword(
+        auth,
+        email,
+        password
+      );
 
-    // Assuming authentication is successful, redirect to the home page
-    navigate("/");
+      const user = userCredential.user;
+
+      console.log(user);
+      setLoading(false);
+      toast.success("Successfully logged in ");
+      navigate("/cart-checkout");
+    } catch (error) {
+      setLoading(false);
+      toast.error(error.message);
+    }
   };
 
   return (
@@ -31,8 +48,8 @@ const SignIn = () => {
           <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
             Sign in to your account
           </h1>
-          <form className="space-y-4" onSubmit={handleSubmit}>
-            <div>
+          <form onSubmit={handleSubmit}>
+            <div className="mb-4">
               <label
                 htmlFor="email"
                 className="block text-sm font-medium text-gray-900 dark:text-white"
@@ -50,7 +67,7 @@ const SignIn = () => {
                 required
               />
             </div>
-            <div>
+            <div className="mb-4">
               <label
                 htmlFor="password"
                 className="block text-sm font-medium text-gray-900 dark:text-white"
@@ -68,11 +85,10 @@ const SignIn = () => {
                 required
               />
             </div>
-            <div className="flex items-center justify-between">
+            <div className="flex items-center justify-between mb-4">
               <div className="flex items-start">
                 <input
                   id="remember"
-                  aria-describedby="remember"
                   type="checkbox"
                   checked={rememberMe}
                   onChange={handleRememberMeChange}
@@ -86,24 +102,28 @@ const SignIn = () => {
                   Remember me
                 </label>
               </div>
-              <a
-                href="/forgetpass"
+              <Link
+                to="/forgetpass"
                 className="text-sm font-medium text-primary-600 hover:underline dark:text-primary-500"
               >
                 Forgot password?
-              </a>
+              </Link>
             </div>
-            <button type="submit" className="button-primary">
+            <button
+              type="submit"
+              className="w-full bg-blue-500 hover:bg-blue-600 text-white font-medium rounded-md p-3 focus:outline-none"
+            >
               Sign in
             </button>
+
             <p className="text-sm font-light text-gray-500 dark:text-gray-400">
               Don’t have an account yet?{" "}
-              <a
-                href="signup"
+              <Link
+                to="/signup"
                 className="font-medium text-primary-600 hover:underline dark:text-primary-500"
               >
                 Sign up
-              </a>
+              </Link>
             </p>
           </form>
         </div>
