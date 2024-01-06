@@ -10,7 +10,18 @@ export const DetailPage = () => {
     productName: "",
     price: 0,
     viewCount: 0,
-    imageUrl: "",
+    spec: {
+      cpu: "",
+      gpu: "",
+      ram: "",
+      storage: "",
+      display: "",
+      battery: "",
+      brightness: "",
+      port: "",
+      weight: "",
+    },
+    imageUrl: [],
   };
   const [computer, setDisplayData] = useState(firstComputer);
 
@@ -27,7 +38,7 @@ export const DetailPage = () => {
     <Layout>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mx-4 my-8">
         <div>
-          <Carousel images={[computer.imageUrl]} />
+          <Carousel images={computer.imageUrl} />
         </div>
         <div>
           <table className="table-auto rounded-lg w-full">
@@ -68,6 +79,48 @@ export const DetailPage = () => {
                 <td>View Count</td>
                 <td>{computer.viewCount}</td>
               </tr>
+              <tr className="h-10 border-b-2">
+                <td>CPU</td>
+                <td>{computer.spec.CPU}</td>
+              </tr>
+              <tr className="h-10 border-b-2">
+                <td>GPU</td>
+                <td>{computer.spec.GPU}</td>
+              </tr>
+              <tr className="h-10 border-b-2">
+                <td>Memory</td>
+                <td>{computer.spec.ram}</td>
+              </tr>
+              {/* storage: "1TB",
+      display: "17.3 IPS (1920 x 1080) 360hz",
+      battery: "70wh",
+      brightness: "600nit",
+      port: "Type-C",
+      weight: "1.3", */}
+              <tr className="h-10 border-b-2">
+                <td>Storage</td>
+                <td>{computer.spec.storage}</td>
+              </tr>
+              <tr className="h-10 border-b-2">
+                <td>Display</td>
+                <td>{computer.spec.display}</td>
+              </tr>
+              <tr className="h-10 border-b-2">
+                <td>Battery</td>
+                <td>{computer.spec.battery}</td>
+              </tr>
+              <tr className="h-10 border-b-2">
+                <td>Brightness</td>
+                <td>{computer.spec.brightness}</td>
+              </tr>
+              <tr className="h-10 border-b-2">
+                <td>Port</td>
+                <td>{computer.spec.port}</td>
+              </tr>
+              <tr className="h-10 border-b-2">
+                <td>Weight</td>
+                <td>{computer.spec.weight}</td>
+              </tr>
             </tbody>
           </table>
         </div>
@@ -80,7 +133,7 @@ export const DetailPage = () => {
               key={i}
               productId={c.productId}
               productName={c.productName}
-              imageUrl={c.imageUrl}
+              imageUrl={c.imageUrl[0]}
               price={c.price}
               viewCount={c.viewCount}
             />

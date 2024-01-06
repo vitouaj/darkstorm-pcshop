@@ -1,5 +1,5 @@
 import { Card } from "../Components/Card";
-import { PCs as pc } from "../assets/Data/Computer"
+import { PCs as pc } from "../assets/Data/Computer";
 import { Carousel } from "../Components/Carousel";
 import { Layout } from "./Layout";
 
