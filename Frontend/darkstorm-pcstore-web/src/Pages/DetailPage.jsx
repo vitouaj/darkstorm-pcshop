@@ -38,7 +38,7 @@ export const DetailPage = () => {
     <Layout>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mx-4 my-8">
         <div>
-          <Carousel images={computer.imageUrl} />
+        <Carousel images={computer.imageUrl} />
         </div>
         <div>
           <table className="table-auto rounded-lg w-full">

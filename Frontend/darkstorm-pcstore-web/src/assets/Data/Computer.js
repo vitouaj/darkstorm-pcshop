@@ -1,4 +1,4 @@
-const PCs = [
+export const PCs = [
   {
     productId: "c45e8e92-5b8a-4a82-90e1-7baf7fbf26f1",
     productName: "ROG Strix G17 (2022) G713",
@@ -13,11 +13,11 @@ const PCs = [
       battery: "70wh",
       brightness: "600nit",
       port: "Type-C",
-      weight: "1.3kg",
+      weight: "2.5kg",
     },
     imageUrl:
-      "https://www.ubuy.com.kh/productimg/?image=aHR0cHM6Ly9pbWFnZXMtY2RuLnVidXkuY28uaWQvNjRjMTg3ZmMxOGFjZDM3OWFlNzA0MjZlLWFzdXMtcm9nLXN0cml4LTE1LTYtcjktcnR4LTMwNjAtZ2FtaW5nLmpwZw.jpg",
-  },
+[      "https://www.ubuy.com.kh/productimg/?image=aHR0cHM6Ly9pbWFnZXMtY2RuLnVidXkuY28uaWQvNjRjMTg3ZmMxOGFjZDM3OWFlNzA0MjZlLWFzdXMtcm9nLXN0cml4LTE1LTYtcjktcnR4LTMwNjAtZ2FtaW5nLmpwZw.jpg",
+]  },
   {
     productId: 1,
     productName: "ROG GZ301VU",
