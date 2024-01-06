@@ -28,7 +28,7 @@ export const LandingPage = () => {
               key={i}
               productId={c.productId}
               productName={c.productName}
-              imageUrl={c.imageUrl}
+              imageUrl={c.imageUrl[0]}
               price={c.price}
               viewCount={c.viewCount}
             />
@@ -45,7 +45,7 @@ export const LandingPage = () => {
               key={i}
               productId={c.productId}
               productName={c.productName}
-              imageUrl={c.imageUrl}
+              imageUrl={c.imageUrl[0]}
               price={c.price}
               viewCount={c.viewCount}
             />
