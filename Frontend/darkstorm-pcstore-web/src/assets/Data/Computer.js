@@ -9,15 +9,18 @@ export const PCs = [
       gpu: "NVIDIA RTX 3060",
       ram: "16GB DDR5",
       storage: "1TB",
-      display: "17.3 IPS (1920 x 1080) 360hz",
+      display: "17.3 IPS (1920 x 1080) 144hz",
       battery: "70wh",
       brightness: "600nit",
       port: "Type-C",
       weight: "2.5kg",
     },
-    imageUrl:
-[      "https://www.ubuy.com.kh/productimg/?image=aHR0cHM6Ly9pbWFnZXMtY2RuLnVidXkuY28uaWQvNjRjMTg3ZmMxOGFjZDM3OWFlNzA0MjZlLWFzdXMtcm9nLXN0cml4LTE1LTYtcjktcnR4LTMwNjAtZ2FtaW5nLmpwZw.jpg",
-]  },
+    imageUrl: [
+      "https://m.media-amazon.com/images/I/81ahHX9wU1L._SX679_.jpg",
+      "https://m.media-amazon.com/images/I/91isPK7uY2L._SX679_.jpg",
+      "https://dlcdnwebimgs.asus.com/gain/0D31F8FA-262F-4BE7-ADFD-215927CECAD9/w1000/h732",
+    ],
+  },
   {
     productId: "1",
     productName: "ROG GZ301VU",
@@ -25,16 +28,21 @@ export const PCs = [
     viewCount: 256,
     spec: {
       cpu: "Intel Core I9 13900H",
-      gpu: "NVIDIA RTX 2080 Ti",
-      memory: "16GB DDR4",
+      gpu: "NVIDIA RTX 4080 ",
+      ram: "16GB DDR5",
       storage: "1TB SSD",
-      display: "13.4 IPS QHD (2560 x 1600) 165Hz",
+      display: "17.3 IPS QHD (2560 x 1600) 165Hz",
       battery: "90Wh",
       brightness: "500 nit",
       port: "Thunderbolt 4",
       weight: "1.7kg",
     },
-    imageUrl: ["/laptopimg/rog5.jpg"],
+    imageUrl: [
+      "https://m.media-amazon.com/images/I/61XnKDqBjzL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/61cdZv7dBzL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/71q8et+YWLL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/71Kdup1u6wL._AC_SX679_.jpg",
+    ],
   },
   {
     productId: "2",
@@ -44,7 +52,7 @@ export const PCs = [
     spec: {
       cpu: "Intel Core I7 12700H",
       gpu: "NVIDIA RTX3070 8GB",
-      memory: "16GB DDR4",
+      ram: "16GB DDR4",
       storage: "512GB SSD",
       display: "15.6 IPS FHD (1920 x 1080) IPS, 144Hz",
       battery: "99Wh",
@@ -52,7 +60,11 @@ export const PCs = [
       port: "USB-C",
       weight: "2.2kg",
     },
-    imageUrl: ["/laptopimg/aorus.jpg"],
+    imageUrl: [
+      "https://m.media-amazon.com/images/I/71fKO9XQD9L._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/71DHvtC+XVL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/713Z-wHZDbL._AC_SX679_.jpg",
+    ],
   },
   {
     productId: "3",
@@ -62,7 +74,7 @@ export const PCs = [
     spec: {
       cpu: "Intel Core I7 12700H",
       gpu: "NVIDIA RTX 3060 6GB",
-      memory: "32GB DDR4",
+      ram: "32GB DDR4",
       storage: "1TB NVMe SSD",
       display: "15.6 IPS FHD (1920 x 1080) 165Hz",
       battery: "86Wh",
@@ -70,17 +82,21 @@ export const PCs = [
       port: "Thunderbolt 4",
       weight: "2.5kg",
     },
-    imageUrl: ["../assets/Data/laptopimg/alien.jpg"],
+    imageUrl: [
+      "https://m.media-amazon.com/images/I/51ZZNF9KzuL._SX679_.jpg  ",
+      "https://m.media-amazon.com/images/I/51Vw1Wx1j-L._SX679_.jpg",
+      "https://m.media-amazon.com/images/I/61n5KzOWutL._SX679_.jpg",
+    ],
   },
   {
-    productId: '4',
+    productId: "4",
     productName: "Acer Nitro 5",
     price: 799.99,
     viewCount: 256,
     spec: {
       cpu: "Intel Core i5-10300H",
       gpu: "NVIDIA GTX 1650",
-      memory: "8GB DDR4",
+      ram: "8GB DDR4",
       storage: "256GB SSD",
       display: "15.6 IPS FHD (1920 x 1080) 144Hz",
       battery: "57Wh",
@@ -88,7 +104,12 @@ export const PCs = [
       port: "USB 3.2",
       weight: "2.3kg",
     },
-    imageUrl: ["/laptopimg/nitro5.jpg"],
+    imageUrl: [
+      "https://i.imgur.com/XnOTI1T.jpg",
+      "https://m.media-amazon.com/images/I/81m-uTdzTcL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/81J4ugkjFHL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/81mLuk8UAjL._AC_SX679_.jpg",
+    ],
   },
   {
     productId: "5",
@@ -98,7 +119,7 @@ export const PCs = [
     spec: {
       cpu: "Intel Core i7-10510U",
       gpu: "Integrated Intel Graphics",
-      memory: "16GB DDR4",
+      ram: "16GB DDR4",
       storage: "512GB SSD",
       display: "15.6 IPS FHD (1920 x 1080)",
       battery: "56Wh",
@@ -106,7 +127,11 @@ export const PCs = [
       port: "USB-C",
       weight: "1.7kg",
     },
-    imageUrl: ["/laptopimg/hpelitebook.jpg"],
+    imageUrl: [
+      "https://m.media-amazon.com/images/I/51p7pXdWyDL.__AC_SY300_SX300_QL70_FMwebp_.jpg",
+      "https://m.media-amazon.com/images/I/51VqmtRV1fL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/31N7azdHUdL._AC_.jpg",
+    ],
   },
   {
     productId: "6",
@@ -116,7 +141,7 @@ export const PCs = [
     spec: {
       cpu: "Intel Core i5-10210U",
       gpu: "Integrated Intel Graphics",
-      memory: "8GB DDR4",
+      ram: "8GB DDR4",
       storage: "256GB SSD",
       display: "14.0 IPS FHD (1920 x 1080)",
       battery: "45Wh",
@@ -124,7 +149,11 @@ export const PCs = [
       port: "USB 2.0",
       weight: "1.5kg",
     },
-    imageUrl: ["/laptopimg/ideapad3.jpg"],
+    imageUrl: [
+      "https://m.media-amazon.com/images/I/71eLIuDmIgL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/81uEWVxAi7L._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/81insze4SqL._AC_SX679_.jpg",
+    ],
   },
   {
     productId: "7",
@@ -134,7 +163,7 @@ export const PCs = [
     spec: {
       cpu: "AMD Ryzen 7 4800H",
       gpu: "NVIDIA RTX 2060",
-      memory: "16GB DDR4",
+      ram: "16GB DDR4",
       storage: "1TB SSD",
       display: "15.6 IPS FHD (1920 x 1080) 144Hz",
       battery: "90Wh",
@@ -142,7 +171,11 @@ export const PCs = [
       port: "USB-C",
       weight: "2.3kg",
     },
-    imageUrl: ["/laptopimg/asustuf.jpg"],
+    imageUrl: [
+      "https://m.media-amazon.com/images/I/81gK08T6tYL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/81kQRwB5ZhL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/81S7KwB+KML._AC_SX679_.jpg",
+    ],
   },
   {
     productId: "8",
@@ -152,7 +185,7 @@ export const PCs = [
     spec: {
       cpu: "Intel Core i7-1165G7",
       gpu: "Integrated Intel Iris Xe Graphics",
-      memory: "16GB DDR4",
+      ram: "16GB DDR4",
       storage: "512GB SSD",
       display: "15.6 IPS FHD (1920 x 1080) 144Hz",
       battery: "68Wh",
@@ -160,7 +193,11 @@ export const PCs = [
       port: "Thunderbolt 4",
       weight: "1.1kg",
     },
-    imageUrl: ["/laptopimg/samsungbook.jpg"],
+    imageUrl: [
+      "https://m.media-amazon.com/images/I/81S+bsvTMSS._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/71mdjmiz9yS._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/61pmPr7oqLS._AC_SX679_.jpg",
+    ],
   },
   {
     productId: "9",
@@ -170,7 +207,7 @@ export const PCs = [
     spec: {
       cpu: "Intel Core i9-10980HK",
       gpu: "NVIDIA RTX 3080",
-      memory: "32GB DDR4",
+      ram: "32GB DDR4",
       storage: "2TB SSD",
       display: "17.3 IPS FHD (1920 x 1080) 144Hz",
       battery: "86Wh",
@@ -178,7 +215,11 @@ export const PCs = [
       port: "USB-C",
       weight: "3.5kg",
     },
-    imageUrl: ["/laptopimg/della1.jpg"],
+    imageUrl: [
+      "https://m.media-amazon.com/images/I/71Ekj79pZtL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/61vCYFGK-ML._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/51wmMLLIIAL._AC_SX679_.jpg",
+    ],
   },
   {
     productId: "10",
@@ -188,7 +229,7 @@ export const PCs = [
     spec: {
       cpu: "Intel Celeron N4020",
       gpu: "Integrated Intel Graphics",
-      memory: "8GB DDR4",
+      ram: "8GB DDR4",
       storage: "256GB SSD",
       display: "13.0 IPS FHD (1920 x 1080)",
       battery: "27Wh",
@@ -197,9 +238,9 @@ export const PCs = [
       weight: "0.99kg",
     },
     imageUrl: [
-      "/laptopimg/chromebook.jpg",
-      "/laptopimg/chromebook1.jpg",
-      "/laptopimg/chromebook2.jpg",
+      "https://m.media-amazon.com/images/I/71nDBnG8kGL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/71ca-IP88fL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/71wrXpcNiYL._AC_SX679_.jpg",
     ],
   },
   {
@@ -210,7 +251,7 @@ export const PCs = [
     spec: {
       cpu: "AMD Ryzen 5 5600H",
       gpu: "NVIDIA RTX 3060",
-      memory: "16GB DDR4",
+      ram: "16GB DDR4",
       storage: "512GB SSD",
       display: "15.6 IPS FHD (1920 x 1080) 144Hz",
       battery: "60Wh",
@@ -218,7 +259,11 @@ export const PCs = [
       port: "USB-C",
       weight: "2.4kg",
     },
-    imageUrl: ["/laptopimg/legion.jpg"],
+    imageUrl: [
+      "https://m.media-amazon.com/images/I/71KH1g5t9JL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/511BSuefKFL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/71JFILIVrZL._AC_SX679_.jpg",
+    ],
   },
   {
     productId: "12",
@@ -228,7 +273,7 @@ export const PCs = [
     spec: {
       cpu: "AMD Ryzen 3 3250U",
       gpu: "Integrated AMD Radeon Graphics",
-      memory: "8GB DDR4",
+      ram: "8GB DDR4",
       storage: "128GB SSD",
       display: "12.6 IPS FHD (1920 x 1080)",
       battery: "35Wh",
@@ -236,17 +281,21 @@ export const PCs = [
       port: "USB 2.0",
       weight: "1.7kg",
     },
-    imageUrl: ["/laptopimg/ideapad.jpg"],
+    imageUrl: [
+      "https://m.media-amazon.com/images/I/71lwdPmm0UL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/61AvMWETBiL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/81IU6g781GL._AC_SX679_.jpg",
+    ],
   },
   {
-    productId: '13',
-    productName: "ASUS ROG Strix G17 (2024) Gaming Laptop, 17.3” 300Hz OLED",
+    productId: "13",
+    productName: "ASUS ROG Strix G17 (2024) Gaming Laptop, 17.3” 240Hz ",
     price: 2999.99,
     viewCount: 256,
     spec: {
       cpu: "Intel Core i9-14900K",
       gpu: "NVIDIA RTX 4080",
-      memory: "64GB DDR5",
+      ram: "64GB DDR5",
       storage: "2TB SSD",
       display: "17.3 IPS FHD (1920 x 1080) 360Hz",
       battery: "90Wh",
@@ -254,7 +303,11 @@ export const PCs = [
       port: "Thunderbolt 5",
       weight: "3kg",
     },
-    imageUrl: ["/laptopimg/rog.jpg"],
+    imageUrl: [
+      "https://m.media-amazon.com/images/I/71z0om-Cz1L._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/91o+6iU-k6L._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/81nRBgqrffL._AC_SX679_.jpg",
+    ],
   },
   {
     productId: "14",
@@ -264,7 +317,7 @@ export const PCs = [
     spec: {
       cpu: "Intel Core i5-1135G7",
       gpu: "Intel Iris Xe Graphics",
-      memory: "8GB DDR4",
+      ram: "8GB DDR4",
       storage: "512GB SSD",
       display: "15.6 IPS FHD (1920 x 1080) 90Hz",
       battery: "37Wh",
@@ -272,7 +325,11 @@ export const PCs = [
       port: "USB 2.0",
       weight: "1.8kg",
     },
-    imageUrl: ["/laptopimg/vivobook.jpg"],
+    imageUrl: [
+      "https://m.media-amazon.com/images/I/81fstJkUlaL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/816ioPpcNEL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/81fzR0mivqL._AC_SX679_.jpg",
+    ],
   },
   {
     productId: "15",
@@ -282,7 +339,7 @@ export const PCs = [
     spec: {
       cpu: "AMD Ryzen 5 5600H",
       gpu: "NVIDIA GTX 1650",
-      memory: "8GB DDR4",
+      ram: "8GB DDR4",
       storage: "512GB SSD",
       display: "15.6 IPS FHD (1920 x 1080) 144Hz",
       battery: "50Wh",
@@ -290,7 +347,11 @@ export const PCs = [
       port: "USB-C",
       weight: "1.7kg",
     },
-    imageUrl: ["/laptopimg/vivobookpro.jpg"],
+    imageUrl: [
+      "https://m.media-amazon.com/images/I/71KKtlGpmrL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/71axw5mcYZL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/71p0xIH1syL._AC_SX679_.jpg",
+    ],
   },
   {
     productId: "16",
@@ -300,7 +361,7 @@ export const PCs = [
     spec: {
       cpu: "Apple M2 Pro",
       gpu: "Integrated Graphics",
-      memory: "16GB",
+      ram: "16GB",
       storage: "512GB SSD",
       display: "5k MINI-LED 120Hz",
       battery: "70Wh",
@@ -308,7 +369,12 @@ export const PCs = [
       port: "Thunderbolt 4",
       weight: "1.6kg",
     },
-    imageUrl: ["/laptopimg/m21.jpg"],
+    imageUrl: [
+      "https://m.media-amazon.com/images/I/61lYIKPieDL.__AC_SY445_SX342_QL70_FMwebp_.jpg",
+      "https://m.media-amazon.com/images/I/71OSDB-Ez2L._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/817XayGXjeL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/61qGvTA5PkL._AC_SX679_.jpg",
+    ],
   },
   {
     productId: "17",
@@ -316,17 +382,23 @@ export const PCs = [
     price: 1799.99,
     viewCount: 256,
     spec: {
-      cpu: "Intel Core i7-10750H",
-      gpu: "NVIDIA GTX 1650 Ti",
-      memory: "16GB DDR4",
+      cpu: "Intel Core i7-13400H",
+      gpu: "Intel® Arc™ A370M Graphics with 4GB GDDR6",
+      ram: "16GB DDR5",
       storage: "1TB SSD",
-      display: "16 OLED UHD (3840 x 2160) 60Hz",
+      display: "15 OLED UHD (3840 x 2160) 60Hz",
       battery: "86Wh",
       brightness: "500 nit",
       port: "Thunderbolt 3",
-      weight: "2kg",
+      weight: "1kg",
     },
-    imageUrl: ["/laptopimg/xps15.jpg"],
+    imageUrl: [
+      "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/xps-notebooks/xps-15-9530/media-gallery/touch-black/notebook-xps-15-9530-t-black-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=402&wid=654&qlt=100,1&resMode=sharp2&size=654,402&chrss=full",
+      "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/xps-notebooks/xps-15-9530/media-gallery/touch-black/notebook-xps-15-9530-t-black-gallery-4.psd?fmt=png-alpha&pscan=auto&scl=1&hei=402&wid=677&qlt=100,1&resMode=sharp2&size=677,402&chrss=full",
+      "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/xps-notebooks/xps-15-9530/media-gallery/touch-black/notebook-xps-15-9530-t-black-gallery-5.psd?fmt=png-alpha&pscan=auto&scl=1&hei=402&wid=677&qlt=100,1&resMode=sharp2&size=677,402&chrss=full",
+      "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/xps-notebooks/xps-15-9530/media-gallery/touch-black/notebook-xps-15-9530-t-black-gallery-3.psd?fmt=png-alpha&pscan=auto&scl=1&hei=402&wid=518&qlt=100,1&resMode=sharp2&size=518,402&chrss=full",
+      "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/xps-notebooks/xps-15-9530/media-gallery/touch-black/notebook-xps-15-9530-t-black-gallery-12.psd?fmt=png-alpha&pscan=auto&scl=1&hei=402&wid=723&qlt=100,1&resMode=sharp2&size=723,402&chrss=full",
+    ],
   },
   {
     productId: "18",
@@ -334,9 +406,9 @@ export const PCs = [
     price: 1599.99,
     viewCount: 256,
     spec: {
-      cpu: "Intel Core i7-10875H",
-      gpu: "NVIDIA RTX 2070 Max-Q",
-      memory: "16GB DDR4",
+      cpu: "Intel Core i7-12800H",
+      gpu: "NVIDIA RTX 3080 Max-Q",
+      ram: "16GB DDR4",
       storage: "512GB SSD",
       display: "15.6 FHD (1920 x 1080) 144Hz",
       battery: "80Wh",
@@ -344,7 +416,12 @@ export const PCs = [
       port: "Thunderbolt 3",
       weight: "2.1kg",
     },
-    imageUrl: ["/laptopimg/blade15.jpg"],
+    imageUrl: [
+      "https://m.media-amazon.com/images/I/71kBeFDgCkL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/61MxE93f37L._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/61x4rFwlYqL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/61TJvJzazzL._AC_SX679_.jpg",
+    ],
   },
   {
     productId: "19",
@@ -354,7 +431,7 @@ export const PCs = [
     spec: {
       cpu: "Intel Core i7-10750H",
       gpu: "Intel Iris Plus Graphics",
-      memory: "16GB DDR4",
+      ram: "16GB DDR4",
       storage: "1TB SSD",
       display: "15.6 IPS FHD (1920 x 1080) 144Hz",
       battery: "60Wh",
@@ -362,7 +439,12 @@ export const PCs = [
       port: "Thunderbolt 3",
       weight: "1.8kg",
     },
-    imageUrl: ["/laptopimg/spectre.jpg"],
+    imageUrl: [
+      "https://m.media-amazon.com/images/I/7145KTVMJ6L._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/81ofmbBrxuL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/71yZVTmLC6L._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/719qw-8blRL._AC_SX679_.jpg",
+    ],
   },
   {
     productId: "20",
@@ -372,7 +454,7 @@ export const PCs = [
     spec: {
       cpu: "Intel Core i7-10510U",
       gpu: "Intel UHD Graphics",
-      memory: "16GB DDR3",
+      ram: "16GB DDR3",
       storage: "512GB SSD",
       display: "15.6 IPS FHD (1920 x 1080) 60Hz",
       battery: "51Wh",
@@ -380,7 +462,12 @@ export const PCs = [
       port: "USB-C",
       weight: "1.1kg",
     },
-    imageUrl: ["/laptopimg/x12.jpg"],
+    imageUrl: [
+      "https://m.media-amazon.com/images/I/71wJJL7q8nL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/71A+EPzsEkL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/610-rZZL7WL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/61ixdYUvJDL._AC_SX679_.jpg",
+    ],
   },
 
   {
@@ -399,7 +486,9 @@ export const PCs = [
       weight: "7 kg",
     },
     imageUrl: [
-      "https://i5.walmartimage.com/seo/DELL-Optiplex-7040-Desktop-Computer-PC-Intel-Quad-Core-i5-2TB-HDD-8GB-DDR3-RAM-Windows-10-Pro-DVD-WIFI-19in-Monitor-USB-Keyboard-Mouse-Used-Like-New_22b50342-15c5-4e52-83b8-6194af42fd16.3744fdd76aab16f2f17b18c53204c61c.jpeg",
+      "https://m.media-amazon.com/images/I/61p7+Dm0ZcL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/61Xg3m1fA0L._AC_SY879_.jpg",
+      "https://m.media-amazon.com/images/I/61zRNJbpoJL._AC_SX679_.jpg",
     ],
   },
 
