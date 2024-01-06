@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { CartCard } from "../Components/CartCard";
 import { Layout } from "./Layout";
-import { carts } from "../assets/Data/Cart";
+// import { carts } from "../assets/Data/Cart";
+
+const carts = JSON.parse(localStorage.getItem("carts")) || [];
 
 export const CheckoutPage = () => {
   const [showHistory, setShowHistory] = useState(false);
@@ -9,6 +11,8 @@ export const CheckoutPage = () => {
   function handleOpenHistory() {
     setShowHistory(!showHistory);
   }
+
+  console.log(carts);
 
   const [cartItems, setCartItems] = useState(carts);
 
