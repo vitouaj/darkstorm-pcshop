@@ -3,7 +3,7 @@ const PCs = [
     productId: "c45e8e92-5b8a-4a82-90e1-7baf7fbf26f1",
     productName: "ROG Strix G17 (2022) G713",
     price: 1200,
-    viewCount: 256,
+    viewCount: 256, 
     spec: {
       cpu: "Intel i5 13400k",
       gpu: "NVIDIA RTX 3060",
@@ -13,16 +13,14 @@ const PCs = [
       battery: "70wh",
       brightness: "600nit",
       port: "Type-C",
-      weight: "1.3",
+      weight: "1.3kg",
     },
-    imageUrl: [
-      "https://www.ubuy.com.kh/productimg/?image=aHR0cHM6Ly9pbWFnZXMtY2RuLnVidXkuY28uaWQvNjRjMTg3ZmMxOGFjZDM3OWFlNzA0MjZlLWFzdXMtcm9nLXN0cml4LTE1LTYtcjktcnR4LTMwNjAtZ2FtaW5nLmpwZw.jpg",
-    ],
+    imageUrl: "https://www.ubuy.com.kh/productimg/?image=aHR0cHM6Ly9pbWFnZXMtY2RuLnVidXkuY28uaWQvNjRjMTg3ZmMxOGFjZDM3OWFlNzA0MjZlLWFzdXMtcm9nLXN0cml4LTE1LTYtcjktcnR4LTMwNjAtZ2FtaW5nLmpwZw.jpg",
   },
   {
     productId: 1,
     productName: "ROG GZ301VU",
-    price: 2099.0,
+    price: 2099.00,
     viewCount: 256,
     spec: {
       cpu: "Intel Core I9 13900H",
@@ -30,14 +28,17 @@ const PCs = [
       memory: "16GB DDR4",
       storage: "1TB SSD",
       display: "13.4 IPS QHD (2560 x 1600) 165Hz",
-      windows: "11",
+      battery: "90Wh",
+      brightness: "500 nit",
+      port: "Thunderbolt 4",
+      weight: "1.7kg",
     },
-    images: ["/laptopimg/rog5.jpg"],
+    images: ["/laptopimg/rog5.jpg"]
   },
   {
     productId: 2,
     productName: "AORUS-5-SE4",
-    price: 1529.0,
+    price: 1529.00,
     viewCount: 256,
     spec: {
       cpu: "Intel Core I7 12700H",
@@ -45,12 +46,16 @@ const PCs = [
       memory: "16GB DDR4",
       storage: "512GB SSD",
       display: "15.6 IPS FHD (1920 x 1080) IPS, 144Hz",
+      battery: "99Wh",
+      brightness: "300 nit",
+      port: "USB-C",
+      weight: "2.2kg",
     },
-    images: ["/laptopimg/aorus.jpg"],
+    images: ["/laptopimg/aorus.jpg"]
   },
   {
     productId: 3,
-    productName: "Alienware-m15-R7",
+    productName: "Alienware-m15-R7", 
     price: 1499.99,
     viewCount: 256,
     spec: {
@@ -59,22 +64,30 @@ const PCs = [
       memory: "32GB DDR4",
       storage: "1TB NVMe SSD",
       display: "15.6 IPS FHD (1920 x 1080) 165Hz",
+      battery: "86Wh",
+      brightness: "300 nit",
+      port: "Thunderbolt 4",
+      weight: "2.5kg",
     },
-    images: ["/laptopimg/alien.jpg"],
+    images: ["/laptopimg/alien.jpg"]
   },
   {
     productId: 4,
     productName: "Acer Nitro 5",
     price: 799.99,
-    viewCount: 256,
+    viewCount: 256, 
     spec: {
       cpu: "Intel Core i5-10300H",
       gpu: "NVIDIA GTX 1650",
       memory: "8GB DDR4",
       storage: "256GB SSD",
       display: "15.6 IPS FHD (1920 x 1080) 144Hz",
+      battery: "57Wh",
+      brightness: "250 nit",
+      port: "USB 3.2",
+      weight: "2.3kg",
     },
-    images: ["/laptopimg/nitro5.jpg"],
+    images: ["/laptopimg/nitro5.jpg"]
   },
   {
     productId: 5,
@@ -87,8 +100,12 @@ const PCs = [
       memory: "16GB DDR4",
       storage: "512GB SSD",
       display: "15.6 IPS FHD (1920 x 1080)",
+      battery: "56Wh",
+      brightness: "400 nit",
+      port: "USB-C",
+      weight: "1.7kg",
     },
-    images: ["/laptopimg/hpelitebook.jpg"],
+    images: ["/laptopimg/hpelitebook.jpg"]
   },
   {
     productId: 6,
@@ -98,11 +115,15 @@ const PCs = [
     spec: {
       cpu: "Intel Core i5-10210U",
       gpu: "Integrated Intel Graphics",
-      memory: "8GB DDR4",
+      memory: "8GB DDR4", 
       storage: "256GB SSD",
       display: "14.0 IPS FHD (1920 x 1080)",
+      battery: "45Wh",
+      brightness: "220 nit",
+      port: "USB 2.0",
+      weight: "1.5kg",
     },
-    images: ["/laptopimg/ideapad3.jpg"],
+    images: ["/laptopimg/ideapad3.jpg"]
   },
   {
     productId: 7,
@@ -115,8 +136,12 @@ const PCs = [
       memory: "16GB DDR4",
       storage: "1TB SSD",
       display: "15.6 IPS FHD (1920 x 1080) 144Hz",
+      battery: "90Wh",
+      brightness: "300 nit",
+      port: "USB-C",
+      weight: "2.3kg",
     },
-    images: ["/laptopimg/asustuf.jpg"],
+    images: ["/laptopimg/asustuf.jpg"]
   },
   {
     productId: 8,
@@ -129,8 +154,12 @@ const PCs = [
       memory: "16GB DDR4",
       storage: "512GB SSD",
       display: "15.6 IPS FHD (1920 x 1080) 144Hz",
+      battery: "68Wh",
+      brightness: "400 nit",
+      port: "Thunderbolt 4",
+      weight: "1.1kg",
     },
-    images: ["/laptopimg/samsungbook.jpg"],
+    images: ["/laptopimg/samsungbook.jpg"]
   },
   {
     productId: 9,
@@ -143,8 +172,12 @@ const PCs = [
       memory: "32GB DDR4",
       storage: "2TB SSD",
       display: "17.3 IPS FHD (1920 x 1080) 144Hz",
+      battery: "86Wh",
+      brightness: "300 nit",
+      port: "USB-C",
+      weight: "3.5kg",
     },
-    images: ["/laptopimg/della1.jpg"],
+    images: ["/laptopimg/della1.jpg"]
   },
   {
     productId: 10,
@@ -157,12 +190,12 @@ const PCs = [
       memory: "8GB DDR4",
       storage: "256GB SSD",
       display: "13.0 IPS FHD (1920 x 1080)",
+      battery: "27Wh",
+      brightness: "400 nit",  
+      port: "USB-C",
+      weight: "0.99kg",
     },
-    images: [
-      "/laptopimg/chromebook.jpg",
-      "/laptopimg/chromebook1.jpg",
-      "/laptopimg/chromebook2.jpg",
-    ],
+    images: ["/laptopimg/chromebook.jpg", "/laptopimg/chromebook1.jpg", "/laptopimg/chromebook2.jpg"]
   },
   {
     productId: 11,
@@ -175,8 +208,12 @@ const PCs = [
       memory: "16GB DDR4",
       storage: "512GB SSD",
       display: "15.6 IPS FHD (1920 x 1080) 144Hz",
+      battery: "60Wh",
+      brightness: "300 nit",
+      port: "USB-C",
+      weight: "2.4kg",  
     },
-    images: ["/laptopimg/legion.jpg"],
+    images: ["/laptopimg/legion.jpg"]
   },
   {
     productId: 12,
@@ -189,8 +226,12 @@ const PCs = [
       memory: "8GB DDR4",
       storage: "128GB SSD",
       display: "12.6 IPS FHD (1920 x 1080)",
+      battery: "35Wh",
+      brightness: "220 nit",
+      port: "USB 2.0",
+      weight: "1.7kg",
     },
-    images: ["/laptopimg/ideapad.jpg"],
+    images: ["/laptopimg/ideapad.jpg"]
   },
   {
     productId: 13,
@@ -203,22 +244,30 @@ const PCs = [
       memory: "64GB DDR5",
       storage: "2TB SSD",
       display: "17.3 IPS FHD (1920 x 1080) 360Hz",
+      battery: "90Wh",
+      brightness: "500 nit",
+      port: "Thunderbolt 5", 
+      weight: "3kg",
     },
-    images: ["/laptopimg/rog.jpg"],
+    images: ["/laptopimg/rog.jpg"]
   },
   {
     productId: 14,
     productName: "ASUS Vivobook 15.6'' FHD Slim Laptop",
     price: 899.99,
-    viewCount: 256,
+    viewCount: 256, 
     spec: {
       cpu: "Intel Core i5-1135G7",
       gpu: "Intel Iris Xe Graphics",
       memory: "8GB DDR4",
       storage: "512GB SSD",
       display: "15.6 IPS FHD (1920 x 1080) 90Hz",
+      battery: "37Wh",
+      brightness: "250 nit",
+      port: "USB 2.0",
+      weight: "1.8kg",
     },
-    images: ["/laptopimg/vivobook.jpg"],
+    images: ["/laptopimg/vivobook.jpg"]
   },
   {
     productId: 15,
@@ -231,8 +280,12 @@ const PCs = [
       memory: "8GB DDR4",
       storage: "512GB SSD",
       display: "15.6 IPS FHD (1920 x 1080) 144Hz",
+      battery: "50Wh",
+      brightness: "250 nit",
+      port: "USB-C",
+      weight: "1.7kg",
     },
-    images: ["/laptopimg/vivobookpro.jpg"],
+    images: ["/laptopimg/vivobookpro.jpg"]
   },
   {
     productId: 16,
@@ -241,15 +294,19 @@ const PCs = [
     viewCount: 256,
     spec: {
       cpu: "Apple M2 Pro",
-      gpu: "Integrated Graphics",
+      gpu: "Integrated Graphics", 
       memory: "16GB",
       storage: "512GB SSD",
       display: "5k MINI-LED 120Hz",
+      battery: "70Wh",
+      brightness: "500 nit",
+      port: "Thunderbolt 4",
+      weight: "1.6kg",  
     },
-    images: ["/laptopimg/m21.jpg"],
+    images: ["/laptopimg/m21.jpg"]
   },
   {
-    productId: 17,
+    productId: 17, 
     productName: "Dell XPS 15",
     price: 1799.99,
     viewCount: 256,
@@ -259,8 +316,12 @@ const PCs = [
       memory: "16GB DDR4",
       storage: "1TB SSD",
       display: "16 OLED UHD (3840 x 2160) 60Hz",
+      battery: "86Wh",
+      brightness: "500 nit",
+      port: "Thunderbolt 3",
+      weight: "2kg",
     },
-    images: ["/laptopimg/xps15.jpg"],
+    images: ["/laptopimg/xps15.jpg"]
   },
   {
     productId: 18,
@@ -272,9 +333,13 @@ const PCs = [
       gpu: "NVIDIA RTX 2070 Max-Q",
       memory: "16GB DDR4",
       storage: "512GB SSD",
-      display: "15.6 FHD (1920 x 1080) 144Hz",
+      display: "15.6 FHD (1920 x 1080) 144Hz", 
+      battery: "80Wh",
+      brightness: "300 nit",
+      port: "Thunderbolt 3",
+      weight: "2.1kg",
     },
-    images: ["/laptopimg/blade15.jpg"],
+    images: ["/laptopimg/blade15.jpg"]
   },
   {
     productId: 19,
@@ -287,12 +352,16 @@ const PCs = [
       memory: "16GB DDR4",
       storage: "1TB SSD",
       display: "15.6 IPS FHD (1920 x 1080) 144Hz",
+      battery: "60Wh",
+      brightness: "400 nit",
+      port: "Thunderbolt 3", 
+      weight: "1.8kg",
     },
-    images: ["/laptopimg/spectre.jpg"],
+    images: ["/laptopimg/spectre.jpg"]
   },
   {
     productId: 20,
-    productName: "Lenovo ThinkPad X1 Carbon",
+    productName: "Lenovo ThinkPad X1 Carbon", 
     price: 1529.99,
     viewCount: 256,
     spec: {
@@ -301,8 +370,12 @@ const PCs = [
       memory: "16GB DDR3",
       storage: "512GB SSD",
       display: "15.6 IPS FHD (1920 x 1080) 60Hz",
+      battery: "51Wh",
+      brightness: "400 nit",
+      port: "USB-C",
+      weight: "1.1kg",
     },
-    images: ["/laptopimg/x12.jpg"],
+    images: ["/laptopimg/x12.jpg"]
   },
 
   {
@@ -311,45 +384,50 @@ const PCs = [
     price: 899,
     viewCount: 180,
     spec: {
-      cpu: "Intel Core I5 12400",
-      gpu: "Intel UHD 6000",
-      memory: "16GB DDR3",
-      storage: "1TB",
-      display: "16 IPS (1920 x 1080)",
+      cpu:"Intel Core I5 12400",
+      gpu:"Intel UHD 6000",
+      storage:"1TB",
+      display:"16 IPS (1920 x 1080)",
+      battery: "N/A",
+      brightness: "250 nit",
+      port: "USB 3.0",
+      weight: "7 kg",
     },
-    imageUrl: [
-      "https://i5.walmartimages.com/seo/DELL-Optiplex-7040-Desktop-Computer-PC-Intel-Quad-Core-i5-2TB-HDD-8GB-DDR3-RAM-Windows-10-Pro-DVD-WIFI-19in-Monitor-USB-Keyboard-Mouse-Used-Like-New_22b50342-15c5-4e52-83b8-6194af42fd16.3744fdd76aab16f2f17b18c53204c61c.jpeg",
-    ],
+     imageUrl: "https://i5.walmartimages.com/seo/DELL-Optiplex-7040-Desktop-Computer-PC-Intel-Quad-Core-i5-2TB-HDD-8GB-DDR3-RAM-Windows-10-Pro-DVD-WIFI-19in-Monitor-USB-Keyboard-Mouse-Used-Like-New_22b50342-15c5-4e52-83b8-6194af42fd16.3744fdd76aab16f2f17b18c53204c61c.jpeg",
+
   },
 
-  // {
-  //   productId: "7c91c819-84da-426f-b2db-40116f7a29d8",
-  //   productName: "UltraWide Monitor",
-  //   price: 499,
-  //   viewCount: 120,
-  //   spec:{
-  //     ScreenType:"IPS",
-  //     Resolution:"3440 x 1440",
-  //   },
-  //   imageUrl: "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6451/6451095_sd.jpg",
+  {
+    productId: "7c91c819-84da-426f-b2db-40116f7a29d8",
+    productName: "UltraWide Monitor",
+    price: 499,
+    viewCount: 120,
+    spec:{
+      ScreenType:"IPS",
+      Resolution:"3440 x 1440",
+    
+      brightness: "300 nit",
+      port: "HDMI, DisplayPort",
+      weight: "5.5 kg",
+    },
+    imageUrl: "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6451/6451095_sd.jpg",
 
-  // },
+    },      
 
-  // {
-  //   productId: "f148c433-0281-477d-8464-b64a10b51ca8",
-  //   productName: "Mechanical Keyboard",
-  //   price: 79.99,
-  //   viewCount: 300,
-  //    imageUrl: "https://assetsio.reedpopcdn.com/k552.jpg?width=1200&height=1200&fit=bounds&quality=70&format=jpg&auto=webp",
-
-  // },
-  //   {
-  //     productId: "53f0f7d1-4b26-4322-b58d-1157f4659d61",
-  //     productName: "Gaming Mouse",
-  //     price: 49.99,
-  //     viewCount: 150,
-  //    imageUrl: "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/518YG4aQZ7L._AC_.jpg",
-
-  // },
+    {
+      productId: "f148c433-0281-477d-8464-b64a10b51ca8",
+      productName: "Mechanical Keyboard",
+      price: 79.99,
+      viewCount: 300, 
+       imageUrl: "https://assetsio.reedpopcdn.com/k552.jpg?width=1200&height=1200&fit=bounds&quality=70&format=jpg&auto=webp",
+  
+    },
+    {
+      productId: "53f0f7d1-4b26-4322-b58d-1157f4659d61",
+      productName: "Gaming Mouse",
+      price: 49.99,
+      viewCount: 150,
+     imageUrl: "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/518YG4aQZ7L._AC_.jpg",
+  
+  }, 
 ];
-export { PCs };

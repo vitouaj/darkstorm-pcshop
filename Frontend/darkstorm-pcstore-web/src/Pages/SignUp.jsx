@@ -1,12 +1,13 @@
+
 import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { auth, storage, db } from "../firebase-config";
 import * as firebaseStorage from "firebase/storage";
 import { setDoc, doc } from "firebase/firestore";
-import { toast } from "react-toastify";
-import { useNavigate } from "react-router-dom";
 
-const Signup = () => {
+const SignUp = () => {
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -66,7 +67,7 @@ const Signup = () => {
   };
 
   return (
-    <section className="bg-gray-100 h-screen flex items-center justify-center">
+    <section className="bg-gradient-to-r from-gray-500 via-black-500 to-white-500 h-screen flex items-center justify-center">
       <div className="bg-white p-8 rounded-md shadow-md w-full max-w-md">
         <h2 className="text-3xl font-extrabold text-gray-900 mb-6">
           Create an Account
@@ -105,34 +106,24 @@ const Signup = () => {
             />
           </div>
 
-          <div>
-            <label className="block text-sm font-medium text-gray-700">
-              Profile Picture
-            </label>
-            <input
-              type="file"
-              accept="image/*"
-              onChange={(e) => setFile(e.target.files[0])}
-            />
-          </div>
-
           <button
             type="submit"
             className="w-full bg-blue-500 hover:bg-blue-600 text-white font-medium rounded-md p-3 focus:outline-none"
+            disabled={loading}
           >
-            Sign Up
+            {loading ? "Signing Up..." : "Sign Up"}
           </button>
         </form>
 
         <p className="text-center text-sm text-gray-500 mt-4">
           Already have an account?{" "}
-          <a href="/signin" className="text-blue-500 hover:underline">
+          <Link to="/signin" className="text-blue-500 hover:underline">
             Log in
-          </a>
+          </Link>
         </p>
       </div>
     </section>
   );
 };
 
-export default Signup;
+export default SignUp;
